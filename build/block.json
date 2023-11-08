@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/pruebaplugin",
+  "version": "0.1.0",
+  "title": "Prueba Plugin",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Plugin de prueba para ClaroSports y UnoTV.",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".title"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": ".description"
+    }
+  },
+  "example": {},
+  "supports": {
+    "html": false,
+    "postTypes": "post"
+  },
+  "textdomain": "pruebaplugin",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
